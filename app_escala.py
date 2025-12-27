@@ -22,7 +22,7 @@ if busca:
     mask= (
         df['Celebrante'].str.contains(busca, case=False, na=False) |
         df['Ministros_Eucaristia'].str.contains(busca, case=False, na=False) |
-        df['Credência'].str.contains(busca, case-False, na=False)
+        df['Credência'].str.contains(busca, case=False, na=False)
     )
 
     df_filtrado = df[mask]
@@ -39,5 +39,6 @@ if busca:
 
 else: 
     st.warning("Nenhum dia encontrado, tente novamente!")
+
 
 
