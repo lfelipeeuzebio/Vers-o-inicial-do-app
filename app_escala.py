@@ -6,7 +6,7 @@ st.title("Escala Mensal - Paróquia Nossa Senhora Medianeira")
 st.markdown("Digite seu nome para ver os dias em que está escalado.")
 
 try:
-    df = pd.read_excel("C:/Users/lfeli/Downloads/escala_medianeira.xlsx")
+    df = pd.read_excel("escala_medianeira.xlsx")
     df['Data'] = pd.to_datetime(df['Data'], format='%d/%m/%Y')
     #st.success("Planilha carregada")
 except FileNotFoundError:
@@ -38,3 +38,4 @@ if busca:
 
 else: 
     st.warning("Nenhum dia encontrado, tente novamente!")
+
