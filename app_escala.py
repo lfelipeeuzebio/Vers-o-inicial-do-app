@@ -34,11 +34,13 @@ if busca:
     df_mostrar['Data'] = df_mostrar ['Data'].dt.strftime('%d/%m/%Y')
 
     st.dataframe(
-            df_mostrar.style.background_gradient(cmap='Blues')  # Destaque azul
+            df_mostrar.style.background_gradient(cmap='Blues')
+            hide_index=True
         )
 
 else: 
     st.warning("Nenhum dia encontrado, tente novamente!")
+
 
 
 
