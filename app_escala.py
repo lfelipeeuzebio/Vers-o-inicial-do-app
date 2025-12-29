@@ -42,39 +42,6 @@ if busca:
 else: 
     st.warning("Nenhum dia encontrado, tente novamente!")
 
-page_bg_img = """
-<style>
-[data-testid="stAppViewContainer"] {
-    background-image: url("https://github.com/lfelipeeuzebio/Vers-o-inicial-do-app/blob/main/WhatsApp%20Image%202025-12-26%20at%2023.35.47.jpeg");
-    background-size: cover;         
-    background-position: center;  
-    background-repeat: no-repeat;
-    background-attachment: fixed;   
-}
-
-[data-testid="stHeader"] {
-    background-color: rgba(0,0,0,0); 
-}
-
-[data-testid="stToolbar"] { visibility: hidden; } 
-
-[data-testid="stAppViewContainer"]::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.4); 
-    z-index: 1;
-}
-[data-testid="stAppViewContainer"] > .css-1y4p8pa, 
-[data-testid="stAppViewContainer"] > section > div { 
-    position: relative; 
-    z-index: 2; 
-}
-
-</style>
-"""
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 
