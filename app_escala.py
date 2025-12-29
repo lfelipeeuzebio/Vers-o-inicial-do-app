@@ -45,7 +45,7 @@ else:
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-image: url("https://github.com/lfelipeeuzebio/Vers-o-inicial-do-app/blob/a85fe1f94328fb2a21836e0213ddaa7bd486f5f5/fun_paroquia.jpeg");
+    background-image: url("https://raw.githubusercontent.com/lfelipeeuzebio/Vers-o-inicial-do-app/main/fun_paroquia.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,6 +72,7 @@ page_bg_img = """
 """
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 
 
