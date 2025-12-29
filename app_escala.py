@@ -22,7 +22,7 @@ if busca:
     mask= (
         df['Celebrante'].str.contains(busca, case=False, na=False) |
         df['Ministros_Eucaristia'].str.contains(busca, case=False, na=False) |
-        df['Credência'].str.contains(busca, case=False, na=False)
+        df['Purificação'].str.contains(busca, case=False, na=False)
     )
 
     df_filtrado = df[mask]
@@ -30,7 +30,7 @@ if busca:
     if not df_filtrado.empty: 
         st.success("Aqui está sua escala:")
 
-    df_mostrar = df_filtrado[['Data', 'Comunidade', 'Horário', 'Celebrante', 'Credência', 'Ministros_Eucaristia']].copy()
+    df_mostrar = df_filtrado[['Data', 'Dia','Comunidade', 'Horário', 'Celebrante',  'Ministros_Eucaristia', 'Purificação']].copy()
     df_mostrar['Data'] = df_mostrar ['Data'].dt.strftime('%d/%m/%Y')
 
     st.dataframe(
@@ -40,6 +40,7 @@ if busca:
 
 else: 
     st.warning("Nenhum dia encontrado, tente novamente!")
+
 
 
 
